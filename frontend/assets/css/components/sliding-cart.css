@@ -1,0 +1,32 @@
+.sliding-cart.is-empty {
+    display: none !important;
+}
+
+.sliding-cart-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 4;
+}
+
+/* Move button when go-top is active */
+.go-top.active + .sliding-cart .sliding-cart-button {
+    right: 65px;
+}
+
+.sliding-cart-panel {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 40%;
+    z-index: 10000; /* override header 9999 */
+}
+
+.sliding-cart-section {
+    padding: 20px;
+}
+

@@ -1447,6 +1447,82 @@
         <i class="fas fa-chevron-up"></i>
         <i class="fas fa-chevron-up"></i>
     </div>
+    
+    <!-- Custom sliding cart -->
+    <section id="sliding-cart" class="sliding-cart"><!-- add "is-empty" class conditionaly to hide when empty -->
+        <button class="btn btn_theme btn_md sliding-cart-button">Cart</button>
+        <article class="sliding-cart-panel">
+            <!-- bundle -->
+            <div class="sliding-cart-bundle sliding-cart-section">
+                <div class="sliding-cart-bundle-header">
+                    <h4 class="sliding-cart-bundle-title">
+                        Boleto de 2 dias, 2 parques, con fecha base
+                    </h4>
+                    <div class="sliding-cart-bundle-actions">
+                        <button class="sliding-cart-bundle-delete btn btn_theme btn_sm">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="sliding-cart-bundle-details">
+                    <h5 class="sliding-cart-bundle-details-title">
+                        Detalles del precio
+                    </h5>
+                    <dl class="sliding-cart-bundle-items">
+                        <div class="sliding-cart-bundle-item">
+                            <dt>$ 309.90 x 1 adulto</dt>
+                            <dd>$ 309.90</dd>
+                        </div>
+                        <div class="sliding-cart-bundle-item">
+                            <dt>$ 209.90 x 1 niño</dt>
+                            <dd>$ 209.90</dd>
+                        </div>
+                        <!-- total -->
+                        <div class="sliding-cart-bundle-item sliding-cart-bundle-total">
+                            <dt>$ 209.90 x 1 niño</dt>
+                            <dd>$ 209.90</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="sliding-cart-bundle-info">
+                    <ul>
+                        <li><i class="fas fa-circle-info"></i> Cancelación gratuita</li>
+                    </ul>
+                    <span class="sliding-cart-bundle-expiration-date">
+                        Hasta el vie, 30 jun
+                    </span>
+                </div>
+            </div>
+            <!-- end bundle -->
+            <!-- total -->
+            <div class="sliding-cart-total sliding-cart-section">
+                <dl class="sliding-cart-total-items">
+                    <div>
+                        <div class="sliding-cart-total-item">
+                            <dt>Subtotal</dt>
+                            <dd>$ 309.90</dd>
+                        </div>
+                        <div class="sliding-cart-total-item">
+                            <dt>Descuento</dt>
+                            <dd>$ 0</dd>
+                        </div>
+                        <!-- total -->
+                        <div class="sliding-cart-total-item sliding-cart-total-total">
+                            <dt>Total</dt>
+                            <dd>$ 1000.90</dd>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+            <!-- end total -->
+            <!-- actions -->
+            <div class="sliding-cart-actions sliding-cart-section">
+                <button role="button" type="button" class="btn btn_theme btn_sm">Continuar comprando</button>
+                <button role="button" type="button" class="btn btn_theme btn_sm">Finalizar compra</button>
+            </div>
+            <!-- end actions -->
+        </article>
+    </section>
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap js -->

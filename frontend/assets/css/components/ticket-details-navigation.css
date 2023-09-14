@@ -1,0 +1,22 @@
+.ticket-details-content-wrapper {
+  box-shadow: 0px 01px 15px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.ticket-details-navigation {
+  display: flex;
+  min-height: 45px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+}
+
+.ticket-details-navigation .ticket-detail-link {
+  padding: 0 10px;
+}
+
+.ticket-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 20px;
+  padding: 30px 20px;
+}

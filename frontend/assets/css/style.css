@@ -1,2 +1,4 @@
-@import url('./site-style.css');
-@import url('./components/sliding-cart.css');
+@import url("./site-style.css");
+@import url("./components/sliding-cart.css");
+@import url("./components/image-gallery-section.css");
+@import url("./components/ticket-details-navigation.css");

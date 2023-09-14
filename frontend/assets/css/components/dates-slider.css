@@ -1,0 +1,31 @@
+.dates-slider {}
+
+.keen-slider__slide {
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  padding: 8px;
+  text-align: center;
+  line-height: 1.2;
+  min-width: 90px;
+  width: 90px;
+  max-width: 90px;
+  background-color: var(--color-white);
+}
+
+.keen-slider__slide.is-active {
+  border: 2px solid var(--main-color);
+}
+
+.keen-slider__slide-date {
+  display: block;
+  font-size: 14px;
+}
+
+.keen-slider__slide-price {
+  display: block;
+}
+
+.keen-slider__slide-price.is-success {
+  font-weight: bold;
+  color: var(--bs-success);
+}

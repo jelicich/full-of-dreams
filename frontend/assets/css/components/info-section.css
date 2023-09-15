@@ -25,6 +25,7 @@
   max-width: 16px;
   min-width: 16px;
   margin-right: 8px;
+  margin-top: 4px;
 }
 
 .info-section-item-address-container {
@@ -42,4 +43,29 @@
 
 .info-section-item-address .info-section-item-list li:not(:first-child) {
   padding-left: 24px;
+}
+
+.info-section-item-content p {
+  margin-bottom: 8px;
+}
+
+.info-section-item-ordered-list > li {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) {
+  .info-section-item {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .info-section-item-header {
+    max-width: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .info-section-item-header h3 {
+    width: 100%;
+  }
 }

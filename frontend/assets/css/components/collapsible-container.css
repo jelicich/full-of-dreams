@@ -1,0 +1,14 @@
+.collapsible-container {
+  margin-bottom: 12px;
+}
+
+.collapsible-container.is-closed {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-mask-image: linear-gradient(to top, rgba(255,255,255,0), #fff 3rem);
+  mask-image: linear-gradient(to top, rgba(255,255,255,0), #fff 3rem);
+}

@@ -364,7 +364,6 @@
             })
         });
     }
-
 }(jQuery));
 
 $(document).ready(function () {
@@ -387,5 +386,21 @@ function backSp(backKey) {
         var prev = this.previousElementSibling.focus()
     }
 }
+
+// set show more buttons
+const CONTAINER_SEL = '.collapsible-container';
+const BUTTON_SEL = '.collapsible-container-button';
+const CLOSED_CLASS = ' is-closed';
+const MORE = 'Show more';
+const LESS = 'Show less';
+
+$(document).ready(function() {
+    $(BUTTON_SEL).click(function(e) {
+        e.preventDefault();
+        $(this).prev().toggleClass(CLOSED_CLASS)
+        const btnContent = $(this).html() === MORE ? LESS : MORE;
+        $(this).html(btnContent);
+    });
+});
 
 jQuery(window).on('load', function () { jQuery(".preloader").fadeOut(500); });

@@ -128,3 +128,30 @@
   margin-top: auto;
   align-self: end;
 }
+
+/* responsive */
+
+@media (max-width: 576px) {
+  .availability-section-header {
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+
+  .availability-section-actions {
+    margin-left: unset;
+  }
+
+  .availability-section-item {
+    flex-direction: column;
+  }
+
+  .availability-section-item-col {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .availability-section-item-col:last-child {
+    margin-bottom: 0;
+  }
+}

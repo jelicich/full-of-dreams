@@ -1,5 +1,4 @@
 .ticket-details-content-wrapper {
-  box-shadow: 0px 01px 15px 0px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 .ticket-details-navigation {
@@ -18,10 +17,14 @@
 }
 
 .ticket-overview {
+  margin-top: 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 20px;
   padding: 30px 36px;
+  border-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .ticket-title-wrapper {

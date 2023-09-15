@@ -51,9 +51,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
-            <div
+            <section
               id="recommendations_carousel"
-              class="tour_details_boxed recommendations-carousel"
+              class="recommendations-carousel"
             >
               <h2 class="recommendations-carousel-title">
                 Other recommended activities
@@ -185,10 +185,24 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </div>
+      <!-- Automatizar la carga del script -->
+      <script>
+        var slider = new KeenSlider("#ticket_recommendations_carousel", {
+          breakpoints: {
+            "(min-width: 400px)": {
+              slides: { perView: 2, spacing: 10 },
+            },
+            "(min-width: 1000px)": {
+              slides: { perView: 4, spacing: 15 },
+            },
+          },
+          slides: { perView: 1 },
+        });
+      </script>
     </section>
 
     <div class="go-top">
@@ -217,18 +231,5 @@
     <script src="assets/js/add-form.js"></script>
     <script src="assets/js/sliding-cart.js"></script>
     <script src="assets/js/dates-slider.js"></script>
-    <script>
-      var slider = new KeenSlider("#ticket_recommendations_carousel", {
-        breakpoints: {
-          "(min-width: 400px)": {
-            slides: { perView: 2, spacing: 10 },
-          },
-          "(min-width: 1000px)": {
-            slides: { perView: 4, spacing: 15 },
-          },
-        },
-        slides: { perView: 1 },
-      });
-    </script>
   </body>
 </html>

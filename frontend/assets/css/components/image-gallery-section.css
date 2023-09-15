@@ -4,7 +4,8 @@
   grid-template-rows: repeat(2, minmax(0, 1fr));
   column-gap: 2px;
   row-gap: 2px;
-  border-radius: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   overflow: hidden;
   aspect-ratio: 3/1;
 }

@@ -1,4 +1,6 @@
-.availability-section {}
+.availability-section {
+  margin-top: 40px;
+}
 
 /* header */
 .availability-section-header {
@@ -15,7 +17,8 @@
 }
 
 /* items */
-.availability-section-items {}
+.availability-section-items {
+}
 
 .availability-section-item {
   padding: 12px;
@@ -78,7 +81,8 @@
   margin-bottom: 12px;
 }
 
-.availability-section-price-items {}
+.availability-section-price-items {
+}
 
 .availability-section-price-item {
   display: flex;

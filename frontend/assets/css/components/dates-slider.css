@@ -1,6 +1,7 @@
-.dates-slider {}
+.dates-slider {
+}
 
-.keen-slider__slide {
+.dates-slider .keen-slider__slide {
   border-radius: 10px;
   border: 1px solid lightgray;
   padding: 8px;
@@ -12,20 +13,20 @@
   background-color: var(--color-white);
 }
 
-.keen-slider__slide.is-active {
+.dates-slider .keen-slider__slide.is-active {
   border: 2px solid var(--main-color);
 }
 
-.keen-slider__slide-date {
+.dates-slider .keen-slider__slide-date {
   display: block;
   font-size: 14px;
 }
 
-.keen-slider__slide-price {
+.dates-slider .keen-slider__slide-price {
   display: block;
 }
 
-.keen-slider__slide-price.is-success {
+.dates-slider .keen-slider__slide-price.is-success {
   font-weight: bold;
   color: var(--bs-success);
 }

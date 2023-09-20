@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   (function ($) {
     const SLIDER_SELECTOR = "#dates-slider";
-    const SLIDE_SELECTOR = ".keen-slider__slide";
+    const SLIDE_SELECTOR = ".date-slide.keen-slider__slide";
     const ACTIVE_CLASS = "is-active";
 
     new KeenSlider(SLIDER_SELECTOR, {

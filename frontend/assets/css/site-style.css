@@ -484,7 +484,7 @@ section {
   color: var(--bs-danger);
 }
 
-.btn_danger:hover i::before{
+.btn_danger:hover i::before {
   color: var(--bs-white-color);
 }
 
@@ -5024,6 +5024,18 @@ textarea {
 
 .modal {
   z-index: 99999;
+  display: block !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal.show {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal .btn_modal_closed button {
+  font-size: 20px !important;
 }
 
 .logout_modal_content {

@@ -17,8 +17,6 @@
 }
 
 /* items */
-.availability-section-items {
-}
 
 .availability-section-item {
   padding: 12px;
@@ -133,6 +131,22 @@
   align-self: end;
 }
 
+#passengerModal .dropdown_passenger_info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#passengerModal .passengers {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #8b3eea17;
+  margin-bottom: 20px;
+}
+
+#passengerModal .passengers h6 {
+  border-bottom: 1px solid #8b3eea17;
+  padding-bottom: 10px;
+}
 /* responsive */
 
 @media (max-width: 767px) {
@@ -157,5 +171,9 @@
 
   .availability-section-item-col:last-child {
     margin-bottom: 0;
+  }
+
+  #passengerModal .dropdown_passenger_info {
+    width: 100%;
   }
 }

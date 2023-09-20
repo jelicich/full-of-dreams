@@ -1,15 +1,19 @@
 .ticket-details-content-wrapper {
   position: relative;
 }
+
+.ticket-details-navigation-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 .ticket-details-navigation {
   display: flex;
   min-height: 45px;
   align-items: center;
   border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
   background: var(--white-color);
-  z-index: 999;
 }
 
 .ticket-details-navigation .ticket-detail-link {
@@ -119,6 +123,13 @@
 }
 
 @media (max-width: 768px) {
+  .ticket-details-navigation-wrapper {
+    overflow: scroll;
+  }
+
+  .ticket-details-navigation {
+    width: max-content;
+  }
   .ticket-overview {
     display: grid;
     grid-template-columns: 1fr;

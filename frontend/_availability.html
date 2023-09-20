@@ -279,7 +279,7 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <div class="modal-body map_modal_content">
+          <div class="modal-body">
             <div class="btn_modal_closed">
               <button type="button" data-bs-dismiss="modal" aria-label="Close">
                 <i class="fas fa-times"></i>
@@ -306,7 +306,248 @@
                 <i class="fas fa-times"></i>
               </button>
             </div>
-            <div class="">Passenger</div>
+            <div class="dropdown_passenger_info">
+              <div class="traveller-calulate-persons">
+                <div class="passengers" data-element="room-1">
+                  <h6>Room 1</h6>
+                  <div class="passengers-wrapper">
+                    <div class="passengers-wrapper-content">
+                      <div class="text">
+                        <div class="type-label">
+                          <p>Adults</p>
+                        </div>
+                      </div>
+                      <div class="counter-button-wrapper">
+                        <button type="button" class="btn-subtract">
+                          <i class="icon-button-counter fas fa-minus"></i>
+                        </button>
+
+                        <span class="counter-result count pcount">1</span>
+                        <button type="button" class="btn-add">
+                          <i class="icon-button-counter fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="childrens-wrapper">
+                      <div class="passengers-wrapper-content">
+                        <div class="type-label">
+                          <p class="fz14 mb-xs-0">Childrens</p>
+                          <span>Ages 0 to 17</span>
+                        </div>
+
+                        <div class="counter-button-wrapper">
+                          <button type="button" class="btn-subtract-c">
+                            <i class="icon-button-counter fas fa-minus"></i>
+                          </button>
+
+                          <span class="counter-result count ccount">1</span>
+                          <button type="button" class="btn-add-c">
+                            <i class="icon-button-counter fas fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="childrens-age-selects-wrapper">
+                        <!-- When childrens > 1 Duplicate this code -->
+                        <div class="uitk-select-wrapper">
+                          <select
+                            name="child1-age"
+                            id="child1-age"
+                            class="uitk-select"
+                          >
+                            <option value="0">Under 1</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                          </select>
+                          <svg
+                            class="uitk-icon uitk-field-select-icon uitk-icon-small"
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <path
+                              d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                            ></path>
+                          </svg>
+                          <div class="uitk-field-label" aria-hidden="true">
+                            Child 1 age<span
+                              class="uitk-field-required-asterisk"
+                              aria-hidden="true"
+                            >
+                              *</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="modal-add-room">Remove room</button>
+                  </div>
+                </div>
+                <div class="passengers" data-element="room-1">
+                  <h6>Room 1</h6>
+                  <div class="passengers-wrapper">
+                    <div class="passengers-wrapper-content">
+                      <div class="text">
+                        <div class="type-label">
+                          <p>Adults</p>
+                        </div>
+                      </div>
+                      <div class="counter-button-wrapper">
+                        <button type="button" class="btn-subtract">
+                          <i class="icon-button-counter fas fa-minus"></i>
+                        </button>
+
+                        <span class="counter-result count pcount">1</span>
+                        <button type="button" class="btn-add">
+                          <i class="icon-button-counter fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="childrens-wrapper">
+                      <div class="passengers-wrapper-content">
+                        <div class="type-label">
+                          <p class="fz14 mb-xs-0">Childrens</p>
+                          <span>Ages 0 to 17</span>
+                        </div>
+
+                        <div class="counter-button-wrapper">
+                          <button type="button" class="btn-subtract-c">
+                            <i class="icon-button-counter fas fa-minus"></i>
+                          </button>
+
+                          <span class="counter-result count ccount">1</span>
+                          <button type="button" class="btn-add-c">
+                            <i class="icon-button-counter fas fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="childrens-age-selects-wrapper">
+                        <!-- When childrens > 1 Duplicate this code -->
+                        <div class="uitk-select-wrapper">
+                          <select
+                            name="child1-age"
+                            id="child1-age"
+                            class="uitk-select"
+                          >
+                            <option value="0">Under 1</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                          </select>
+                          <svg
+                            class="uitk-icon uitk-field-select-icon uitk-icon-small"
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <path
+                              d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                            ></path>
+                          </svg>
+                          <div class="uitk-field-label" aria-hidden="true">
+                            Child 1 age<span
+                              class="uitk-field-required-asterisk"
+                              aria-hidden="true"
+                            >
+                              *</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="modal-add-room">Remove room</button>
+                  </div>
+                </div>
+                <div class="passengers" data-element="room-1">
+                  <h6>Room 1</h6>
+                  <div class="passengers-wrapper">
+                    <div class="passengers-wrapper-content">
+                      <div class="text">
+                        <div class="type-label">
+                          <p>Adults</p>
+                        </div>
+                      </div>
+                      <div class="counter-button-wrapper">
+                        <button type="button" class="btn-subtract">
+                          <i class="icon-button-counter fas fa-minus"></i>
+                        </button>
+
+                        <span class="counter-result count pcount">1</span>
+                        <button type="button" class="btn-add">
+                          <i class="icon-button-counter fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="childrens-wrapper">
+                      <div class="passengers-wrapper-content">
+                        <div class="type-label">
+                          <p class="fz14 mb-xs-0">Childrens</p>
+                          <span>Ages 0 to 17</span>
+                        </div>
+
+                        <div class="counter-button-wrapper">
+                          <button type="button" class="btn-subtract-c">
+                            <i class="icon-button-counter fas fa-minus"></i>
+                          </button>
+
+                          <span class="counter-result count ccount">1</span>
+                          <button type="button" class="btn-add-c">
+                            <i class="icon-button-counter fas fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="childrens-age-selects-wrapper">
+                        <!-- When childrens > 1 Duplicate this code -->
+                        <div class="uitk-select-wrapper">
+                          <select
+                            name="child1-age"
+                            id="child1-age"
+                            class="uitk-select"
+                          >
+                            <option value="0">Under 1</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                          </select>
+                          <svg
+                            class="uitk-icon uitk-field-select-icon uitk-icon-small"
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <path
+                              d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                            ></path>
+                          </svg>
+                          <div class="uitk-field-label" aria-hidden="true">
+                            Child 1 age<span
+                              class="uitk-field-required-asterisk"
+                              aria-hidden="true"
+                            >
+                              *</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="modal-add-room">Remove room</button>
+                  </div>
+                </div>
+                <button class="modal-add-room">Add another room</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

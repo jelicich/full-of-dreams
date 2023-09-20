@@ -103,3 +103,36 @@
   height: auto;
   padding: 0;
 }
+
+#imagegallerymodal .gallery-arrow-wrapper {
+  position: relative;
+}
+#imagegallerymodal .imgage-gallery-arrow-grapper {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 20px;
+  width: calc(100% - 40px);
+  transform: translateY(-50%);
+  justify-content: space-between;
+  font-size: 28px;
+}
+
+#imagegallerymodal .imgage-gallery-arrow-grapper button {
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+}
+
+#imagegallerymodal .imgage-gallery-arrow-grapper button.arrow--disabled {
+  background: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+}

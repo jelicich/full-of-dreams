@@ -31,7 +31,56 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       };
     }
-    var slider = new KeenSlider("#image-gallery-slider");
+
+    function sliderControlNavigation(self) {
+      console.log(self);
+      const arrowLeft = document.querySelector(
+        '[data-arrow="image-gallery-arrow-left"]'
+      );
+      const arrowRight = document.querySelector(
+        '[data-arrow="image-gallery-arrow-right"]'
+      );
+
+      function markup() {
+        arrowMarkup();
+      }
+
+      function arrowMarkup() {
+        arrowLeft && arrowLeft.addEventListener("click", () => self.prev());
+        arrowRight && arrowRight.addEventListener("click", () => self.next());
+      }
+
+      function updateClasses() {
+        const slide = self.track.details.rel;
+        slide === 0
+          ? arrowLeft?.classList.add("arrow--disabled")
+          : arrowLeft?.classList.remove("arrow--disabled");
+
+        slide === self.track.details.slides.length - 1
+          ? arrowRight?.classList.add("arrow--disabled")
+          : arrowRight?.classList.remove("arrow--disabled");
+      }
+
+      self.on("created", () => {
+        markup();
+        updateClasses();
+      });
+      self.on("optionsChanged", () => {
+        markup();
+        markup();
+        updateClasses();
+      });
+      self.on("slideChanged", () => {
+        updateClasses();
+      });
+      self.on("destroyed", () => {
+        markup();
+      });
+    }
+
+    var slider = new KeenSlider("#image-gallery-slider", {}, [
+      sliderControlNavigation,
+    ]);
     var thumbnails = new KeenSlider(
       "#image-gallery-thumbnails",
       {

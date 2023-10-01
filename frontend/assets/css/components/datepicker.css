@@ -51,7 +51,7 @@ div .daterangepicker td.active:hover {
   background-color: var(--main-color);
 }
 
-div.daterangepicker select.monthselect,
+div .daterangepicker select.monthselect,
 div .daterangepicker select.yearselect {
   border-radius: 5px;
   background-color: var(--white-color);
@@ -59,7 +59,7 @@ div .daterangepicker select.yearselect {
   padding: 0.2rem;
 }
 
-div.daterangepicker select.monthselect:focus-visible,
+div .daterangepicker select.monthselect:focus-visible,
 div .daterangepicker select.yearselect:focus-visible {
   outline: unset;
   box-shadow: 1px 1px 3px 3px var(--main-color-light-20);

@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function sliderControlNavigation(self) {
-      console.log(self);
       const arrowLeft = document.querySelector(
         '[data-arrow="image-gallery-arrow-left"]'
       );

@@ -64,6 +64,8 @@ Default CSS
   --paragraph-color: #818090;
   --bg-color: #f3f6fd;
   --transition: 0.4s all ease-in-out;
+  --main-color-light-10: color-mix(in srgb, var(--main-color) 10%, white);
+  --main-color-light-20: color-mix(in srgb, var(--main-color) 20%, white);
 }
 
 html,

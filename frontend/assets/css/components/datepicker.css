@@ -18,7 +18,8 @@
   z-index: 0;
   padding: 0.375rem 0.75rem;
   border: 1px solid var(--main-color);
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .datepicker-button:hover {
@@ -35,7 +36,6 @@
   display: inline-block;
   margin-left: 10px;
 }
-
 
 div .daterangepicker td.in-range {
   background-color: var(--main-color-light-10);
@@ -63,4 +63,40 @@ div .daterangepicker select.monthselect:focus-visible,
 div .daterangepicker select.yearselect:focus-visible {
   outline: unset;
   box-shadow: 1px 1px 3px 3px var(--main-color-light-20);
+}
+
+.date-picker-arrow-grapper {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: -20px;
+  width: calc(100% + 40px);
+  transform: translateY(-50%);
+  justify-content: space-between;
+  font-size: 28px;
+  pointer-events: none;
+}
+
+.date-picker-arrow-grapper.enable-slider {
+  display: flex;
+}
+
+.date-picker-arrow-grapper button {
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  pointer-events: auto;
+}
+
+.date-picker-arrow-grapper button.arrow--disabled {
+  background: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
 }
